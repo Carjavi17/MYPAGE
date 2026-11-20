@@ -1,272 +1,488 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carlos Guerra · Ingeniero geólogo</title>
-  <meta name="description" content="Perfil de Carlos Guerra, ingeniero geólogo con más de ocho años en la industria petrolera del oriente de Venezuela: geología de desarrollo, modelado de yacimientos y cálculo de reservas.">
-  <meta name="theme-color" content="#0c1b24">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carlos Guerra · Ingeniero geólogo</title>
+    <meta
+      name="description"
+      content="Perfil de Carlos Guerra, ingeniero geólogo con más de ocho años en la industria petrolera del oriente de Venezuela: geología de desarrollo, modelado de yacimientos y cálculo de reservas."
+    />
+    <meta name="theme-color" content="#0c1b24" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">Carlos Guerra</a>
-      <div class="header-right">
-        <div class="page-links">
-          <a class="nav-link" href="#experiencia">Experiencia</a>
-          <a class="nav-link" href="#habilidades">Habilidades</a>
-          <a class="nav-link" href="#contacto">Contacto</a>
-        </div>
-        <nav class="profile-switch" aria-label="Perfiles">
-          <a href="geologist.html" aria-current="page">Geólogo</a>
-          <a href="developer.html">Desarrollador</a>
-        </nav>
-        <a class="btn btn-amber btn-small" href="Carlos_Guerra_CV_Geologist.pdf" download>Descargar CV</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="hero">
+  <body>
+    <header class="site-header">
       <div class="wrap">
-        <div>
-          <p class="name-line">Carlos Guerra</p>
-          <h1 class="role">Ingeniero geólogo</h1>
-          <p class="lead">Más de ocho años en geología de desarrollo, modelado de yacimientos y cálculo de reservas en el oriente de Venezuela.</p>
-          <p class="place">El Tigre, Anzoátegui, Venezuela</p>
+        <a class="brand" href="index.html">Carlos Guerra</a>
+        <div class="header-right">
+          <div class="page-links">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </div>
+          <nav class="profile-switch" aria-label="Perfiles">
+            <a href="geologist.html" aria-current="page">Geólogo</a>
+            <a href="developer.html">Desarrollador</a>
+          </nav>
+          <a
+            class="btn btn-amber btn-small"
+            href="Carlos_Guerra_CV_Geologist.pdf"
+            download
+            >Descargar CV</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="wrap">
+          <div>
+            <h1 class="role">Ingeniero Geólogo</h1>
+            <p class="lead">
+              Más de 8 años en geología de desarrollo, modelado de yacimientos y
+              cálculo de reservas en el oriente de Venezuela.
+            </p>
+            <p class="place">El Tigre, Anzoátegui, Venezuela</p>
+            <div class="actions">
+              <a
+                class="btn btn-amber"
+                href="Carlos_Guerra_CV_Geologist.pdf"
+                download
+                >Descargar CV de geólogo</a
+              >
+              <a class="btn btn-outline-deep" href="#experiencia"
+                >Ver experiencia</a
+              >
+            </div>
+          </div>
+
+          <!-- Decorative well log: lithology column on the left, two curves drawn once on load. -->
+          <div class="visual" aria-hidden="true">
+            <svg
+              id="well-log"
+              viewBox="0 0 360 560"
+              role="presentation"
+              focusable="false"
+            >
+              <defs>
+                <pattern
+                  id="pat-sandstone"
+                  width="6"
+                  height="6"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect width="6" height="6" fill="#c9ad6a" />
+                  <circle
+                    cx="2"
+                    cy="2"
+                    r="0.8"
+                    fill="#12202a"
+                    fill-opacity="0.55"
+                  />
+                  <circle
+                    cx="5"
+                    cy="5"
+                    r="0.8"
+                    fill="#12202a"
+                    fill-opacity="0.55"
+                  />
+                </pattern>
+                <pattern
+                  id="pat-shale"
+                  width="8"
+                  height="5"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect width="8" height="5" fill="#5d6f79" />
+                  <line
+                    x1="0"
+                    y1="2.5"
+                    x2="8"
+                    y2="2.5"
+                    stroke="#ffffff"
+                    stroke-opacity="0.4"
+                    stroke-width="1"
+                  />
+                </pattern>
+                <pattern
+                  id="pat-limestone"
+                  width="12"
+                  height="9"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect width="12" height="9" fill="#8fb8b1" />
+                  <path
+                    d="M0 0.5H12M0 4.5H12M6 0V4.5M0 4.5V9M12 4.5V9"
+                    stroke="#12202a"
+                    stroke-opacity="0.4"
+                    stroke-width="0.8"
+                    fill="none"
+                  />
+                </pattern>
+              </defs>
+              <g id="log-grid"></g>
+              <g
+                id="log-lithology"
+                stroke="#e8f0ef"
+                stroke-opacity="0.35"
+                stroke-width="1"
+              ></g>
+              <g id="log-tracks">
+                <path id="curve-gr" class="draw gr" />
+                <path id="curve-res" class="draw res" />
+              </g>
+              <text
+                x="118"
+                y="14"
+                fill="#2fb5a3"
+                font-size="11"
+                font-family="ui-monospace, Consolas, monospace"
+              >
+                GR
+              </text>
+              <text
+                x="318"
+                y="14"
+                fill="#f0b44c"
+                font-size="11"
+                font-family="ui-monospace, Consolas, monospace"
+              >
+                RES
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="on-light">
+        <section aria-labelledby="about-title">
+          <div class="wrap about-grid">
+            <div class="about-text">
+              <h2 id="about-title">Sobre mí</h2>
+              <p class="big">
+                Leer el subsuelo con los datos que hay, y dejar claro cuánta
+                incertidumbre queda.
+              </p>
+              <p>
+                Me gradué como Ingeniero Geólogo en la Universidad de Oriente y
+                trabajé en MCI, PDVSA y Petrolera Indovenezolana, en geología de
+                desarrollo, evaluación de yacimientos y campos maduros, con
+                trabajo en el área Mayor de Anaco.
+              </p>
+              <p>
+                Mi trabajo ha sido integrar pozos, mapas, registros y datos
+                sísmicos en modelos geológicos que respalden decisiones de
+                desarrollo, y apoyar la planificación y ejecución de pozos con
+                correlaciones, surveys y análisis de trayectoria.
+              </p>
+            </div>
+            <dl class="facts">
+              <div>
+                <dt>Formación</dt>
+                <dd>Ingeniero Geólogo, Universidad de Oriente (2009)</dd>
+              </div>
+              <div>
+                <dt>Experiencia de campo</dt>
+                <dd>Unas 7 salidas a campo en 4 a 5 campos</dd>
+              </div>
+              <div>
+                <dt>Disponibilidad</dt>
+                <dd>Trabajo en campo con pernocta</dd>
+              </div>
+              <div>
+                <dt>Idiomas</dt>
+                <dd>Español nativo, inglés intermedio</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section id="experiencia" aria-labelledby="experience-title">
+          <div class="wrap">
+            <h2 id="experience-title">Experiencia</h2>
+            <!-- Read like a well log: the most recent work is on top, the oldest sits deeper. -->
+            <div class="log">
+              <div class="stratum">
+                <div class="years">2017 – 2018</div>
+                <div class="band limestone" aria-hidden="true"></div>
+                <div class="content">
+                  <h3>Geomodelador de yacimientos y geólogo de campo</h3>
+                  <p class="org">Petrolera Indovenezolana, Puerto La Cruz</p>
+                  <ul>
+                    <li>
+                      Modelos estáticos 3D a partir de información geológica y
+                      geofísica validada.
+                    </li>
+                    <li>
+                      Modelos geoestadísticos y análisis de calidad e
+                      incertidumbre de los datos.
+                    </li>
+                    <li>
+                      Integración de pozos, mapas y datos del subsuelo para
+                      decisiones de desarrollo.
+                    </li>
+                    <li>
+                      Informes técnicos y coordinación con equipos
+                      multidisciplinarios.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="stratum">
+                <div class="years">2012 – 2017</div>
+                <div class="band sandstone" aria-hidden="true"></div>
+                <div class="content">
+                  <h3>Geólogo de estudios integrados y geomodelador</h3>
+                  <p class="org">PDVSA, Puerto La Cruz</p>
+                  <ul>
+                    <li>
+                      Análisis geológico y cálculo de reservas, incluyendo el
+                      área Mayor de Anaco.
+                    </li>
+                    <li>
+                      Correlación de pozos, mapas estructurales e isópacos, y
+                      secciones estructurales y estratigráficas.
+                    </li>
+                    <li>
+                      Integración de mapas, registros y datos sísmicos para
+                      modelos geológicos y caracterización de yacimientos.
+                    </li>
+                    <li>
+                      Estudios de geología de desarrollo y evaluación de
+                      yacimientos, incluyendo campos maduros.
+                    </li>
+                    <li>
+                      Informes técnicos para respaldar la planificación y
+                      ejecución de proyectos de exploración y desarrollo.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="stratum">
+                <div class="years">2009 – 2012</div>
+                <div class="band shale" aria-hidden="true"></div>
+                <div class="content">
+                  <h3>Geólogo de estudios integrados</h3>
+                  <p class="org">MCI, Puerto La Cruz</p>
+                  <ul>
+                    <li>
+                      Validación e interpretación de datos geológicos para
+                      proyectos de exploración y producción.
+                    </li>
+                    <li>
+                      Soporte geológico a la perforación y planificación de
+                      pozos.
+                    </li>
+                    <li>
+                      Reinterpretación de información del subsuelo y
+                      organización de bases de datos técnicas.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="habilidades" aria-labelledby="skills-title">
+          <div class="wrap">
+            <h2 id="skills-title">Habilidades</h2>
+            <div class="skills">
+              <div>
+                <h3>Software técnico</h3>
+                <ul class="chips">
+                  <li>Petrel 2D/3D</li>
+                  <li>WellPlan</li>
+                  <li>OpenWorks</li>
+                  <li>OpenFlow Suites</li>
+                  <li>GOCAD-SKUA</li>
+                  <li>SIGEMAP</li>
+                  <li>Neuralog</li>
+                  <li>MicroStation</li>
+                  <li>Canvas</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Competencias</h3>
+                <ul class="chips">
+                  <li>Geología de desarrollo</li>
+                  <li>Evaluación de yacimientos</li>
+                  <li>Correlación de pozos</li>
+                  <li>Cálculo de reservas</li>
+                  <li>Modelado geoestadístico</li>
+                  <li>Surveys y trayectorias</li>
+                  <li>Informes técnicos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="contacto" class="contact" aria-labelledby="contact-title">
+        <div class="wrap">
+          <h2 id="contact-title">Hablemos</h2>
+          <p>
+            Si tienes una oportunidad en geología, perforación o campo,
+            escríbeme.
+          </p>
           <div class="actions">
-            <a class="btn btn-amber" href="Carlos_Guerra_CV_Geologist.pdf" download>Descargar CV de geólogo</a>
-            <a class="btn btn-outline-deep" href="#experiencia">Ver experiencia</a>
-          </div>
-        </div>
-
-        <!-- Decorative well log: lithology column on the left, two curves drawn once on load. -->
-        <div class="visual" aria-hidden="true">
-          <svg id="well-log" viewBox="0 0 360 560" role="presentation" focusable="false">
-            <defs>
-              <pattern id="pat-sandstone" width="6" height="6" patternUnits="userSpaceOnUse">
-                <rect width="6" height="6" fill="#c9ad6a"/>
-                <circle cx="2" cy="2" r="0.8" fill="#12202a" fill-opacity="0.55"/>
-                <circle cx="5" cy="5" r="0.8" fill="#12202a" fill-opacity="0.55"/>
-              </pattern>
-              <pattern id="pat-shale" width="8" height="5" patternUnits="userSpaceOnUse">
-                <rect width="8" height="5" fill="#5d6f79"/>
-                <line x1="0" y1="2.5" x2="8" y2="2.5" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
-              </pattern>
-              <pattern id="pat-limestone" width="12" height="9" patternUnits="userSpaceOnUse">
-                <rect width="12" height="9" fill="#8fb8b1"/>
-                <path d="M0 0.5H12M0 4.5H12M6 0V4.5M0 4.5V9M12 4.5V9" stroke="#12202a" stroke-opacity="0.4" stroke-width="0.8" fill="none"/>
-              </pattern>
-            </defs>
-            <g id="log-grid"></g>
-            <g id="log-lithology" stroke="#e8f0ef" stroke-opacity="0.35" stroke-width="1"></g>
-            <g id="log-tracks">
-              <path id="curve-gr" class="draw gr"/>
-              <path id="curve-res" class="draw res"/>
-            </g>
-            <text x="118" y="14" fill="#2fb5a3" font-size="11" font-family="ui-monospace, Consolas, monospace">GR</text>
-            <text x="318" y="14" fill="#f0b44c" font-size="11" font-family="ui-monospace, Consolas, monospace">RES</text>
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <div class="on-light">
-      <section aria-labelledby="about-title">
-        <div class="wrap about-grid">
-          <div class="about-text">
-            <h2 id="about-title">Sobre mí</h2>
-            <p class="big">Leer el subsuelo con los datos que hay, y dejar claro cuánta incertidumbre queda.</p>
-            <p>Me gradué como Ingeniero Geólogo en la Universidad de Oriente y trabajé en MCI, PDVSA y Petrolera Indovenezolana, en geología de desarrollo, evaluación de yacimientos y campos maduros, con trabajo en el área Mayor de Anaco.</p>
-            <p>Mi trabajo ha sido integrar pozos, mapas, registros y datos sísmicos en modelos geológicos que respalden decisiones de desarrollo, y apoyar la planificación y ejecución de pozos con correlaciones, surveys y análisis de trayectoria.</p>
-          </div>
-          <dl class="facts">
-            <div><dt>Formación</dt><dd>Ingeniero Geólogo, Universidad de Oriente (2009)</dd></div>
-            <div><dt>Experiencia de campo</dt><dd>Unas 7 salidas a campo en 4 a 5 campos</dd></div>
-            <div><dt>Disponibilidad</dt><dd>Trabajo en campo con pernocta</dd></div>
-            <div><dt>Idiomas</dt><dd>Español nativo, inglés intermedio</dd></div>
-          </dl>
-        </div>
-      </section>
-
-      <section id="experiencia" aria-labelledby="experience-title">
-        <div class="wrap">
-          <h2 id="experience-title">Experiencia</h2>
-          <!-- Read like a well log: the most recent work is on top, the oldest sits deeper. -->
-          <div class="log">
-
-            <div class="stratum">
-              <div class="years">2017 – 2018</div>
-              <div class="band limestone" aria-hidden="true"></div>
-              <div class="content">
-                <h3>Geomodelador de yacimientos y geólogo de campo</h3>
-                <p class="org">Petrolera Indovenezolana, Puerto La Cruz</p>
-                <ul>
-                  <li>Modelos estáticos 3D a partir de información geológica y geofísica validada.</li>
-                  <li>Modelos geoestadísticos y análisis de calidad e incertidumbre de los datos.</li>
-                  <li>Integración de pozos, mapas y datos del subsuelo para decisiones de desarrollo.</li>
-                  <li>Informes técnicos y coordinación con equipos multidisciplinarios.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="stratum">
-              <div class="years">2012 – 2017</div>
-              <div class="band sandstone" aria-hidden="true"></div>
-              <div class="content">
-                <h3>Geólogo de estudios integrados y geomodelador</h3>
-                <p class="org">PDVSA, Puerto La Cruz</p>
-                <ul>
-                  <li>Análisis geológico y cálculo de reservas, incluyendo el área Mayor de Anaco.</li>
-                  <li>Correlación de pozos, mapas estructurales e isópacos, y secciones estructurales y estratigráficas.</li>
-                  <li>Integración de mapas, registros y datos sísmicos para modelos geológicos y caracterización de yacimientos.</li>
-                  <li>Estudios de geología de desarrollo y evaluación de yacimientos, incluyendo campos maduros.</li>
-                  <li>Informes técnicos para respaldar la planificación y ejecución de proyectos de exploración y desarrollo.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="stratum">
-              <div class="years">2009 – 2012</div>
-              <div class="band shale" aria-hidden="true"></div>
-              <div class="content">
-                <h3>Geólogo de estudios integrados</h3>
-                <p class="org">MCI, Puerto La Cruz</p>
-                <ul>
-                  <li>Validación e interpretación de datos geológicos para proyectos de exploración y producción.</li>
-                  <li>Soporte geológico a la perforación y planificación de pozos.</li>
-                  <li>Reinterpretación de información del subsuelo y organización de bases de datos técnicas.</li>
-                </ul>
-              </div>
-            </div>
-
+            <!-- The address is assembled by site.js so it is not written in plain text in the page. -->
+            <a class="btn btn-amber" id="email-link" href="#contacto"
+              >Escribirme un correo</a
+            >
+            <a
+              class="btn btn-outline-deep"
+              href="https://www.linkedin.com/in/carlos-guerra-80234920/"
+              rel="noopener"
+              target="_blank"
+              >Perfil en LinkedIn</a
+            >
+            <a class="btn btn-outline-deep" href="developer.html"
+              >Ver perfil de desarrollador</a
+            >
           </div>
         </div>
       </section>
+    </main>
 
-      <section id="habilidades" aria-labelledby="skills-title">
-        <div class="wrap">
-          <h2 id="skills-title">Habilidades</h2>
-          <div class="skills">
-            <div>
-              <h3>Software técnico</h3>
-              <ul class="chips">
-                <li>Petrel 2D/3D</li><li>WellPlan</li><li>OpenWorks</li><li>OpenFlow Suites</li><li>GOCAD-SKUA</li><li>SIGEMAP</li><li>Neuralog</li><li>MicroStation</li><li>Canvas</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Competencias</h3>
-              <ul class="chips">
-                <li>Geología de desarrollo</li><li>Evaluación de yacimientos</li><li>Correlación de pozos</li><li>Cálculo de reservas</li><li>Modelado geoestadístico</li><li>Surveys y trayectorias</li><li>Informes técnicos</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section id="contacto" class="contact" aria-labelledby="contact-title">
+    <footer>
       <div class="wrap">
-        <h2 id="contact-title">Hablemos</h2>
-        <p>Si tienes una oportunidad en geología, perforación o campo, escríbeme.</p>
-        <div class="actions">
-          <!-- The address is assembled by site.js so it is not written in plain text in the page. -->
-          <a class="btn btn-amber" id="email-link" href="#contacto">Escribirme un correo</a>
-          <a class="btn btn-outline-deep" href="https://www.linkedin.com/in/carlos-guerra-80234920" rel="noopener" target="_blank">Perfil en LinkedIn</a>
-          <a class="btn btn-outline-deep" href="developer.html">Ver perfil de desarrollador</a>
-        </div>
+        <span
+          >© <span id="current-year"></span> Carlos Guerra - Todo los derechos
+          reservados.</span
+        >
+        <a href="index.html">Inicio</a>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer>
-    <div class="wrap">
-      <span>© <span id="current-year"></span> Carlos Guerra</span>
-      <a href="index.html">Inicio</a>
-    </div>
-  </footer>
+    <script>
+      // Decorative well log: deterministic curves so the drawing is the same on every visit.
+      (function () {
+        var svg = document.getElementById("well-log");
+        if (!svg) {
+          return;
+        }
 
-  <script>
-// Decorative well log: deterministic curves so the drawing is the same on every visit.
-(function () {
-  var svg = document.getElementById("well-log");
-  if (!svg) { return; }
+        var svgNs = "http://www.w3.org/2000/svg";
+        var top = 24;
+        var bottom = 548;
+        var step = 4;
 
-  var svgNs = "http://www.w3.org/2000/svg";
-  var top = 24;
-  var bottom = 548;
-  var step = 4;
+        function make(name, attrs) {
+          var el = document.createElementNS(svgNs, name);
+          Object.keys(attrs).forEach(function (key) {
+            el.setAttribute(key, attrs[key]);
+          });
+          return el;
+        }
 
-  function make(name, attrs) {
-    var el = document.createElementNS(svgNs, name);
-    Object.keys(attrs).forEach(function (key) { el.setAttribute(key, attrs[key]); });
-    return el;
-  }
+        // Depth grid and labels
+        var grid = document.getElementById("log-grid");
+        for (var y = top + 20, depth = 1500; y < bottom; y += 52, depth += 50) {
+          grid.appendChild(
+            make("line", {
+              x1: 36,
+              x2: 345,
+              y1: y,
+              y2: y,
+              stroke: "#e8f0ef",
+              "stroke-opacity": 0.09,
+            }),
+          );
+          var label = make("text", {
+            x: 0,
+            y: y + 4,
+            fill: "#9fb4b8",
+            "font-size": 10,
+            "font-family": "ui-monospace, Consolas, monospace",
+          });
+          label.textContent = depth;
+          grid.appendChild(label);
+        }
 
-  // Depth grid and labels
-  var grid = document.getElementById("log-grid");
-  for (var y = top + 20, depth = 1500; y < bottom; y += 52, depth += 50) {
-    grid.appendChild(make("line", { x1: 36, x2: 345, y1: y, y2: y, stroke: "#e8f0ef", "stroke-opacity": 0.09 }));
-    var label = make("text", { x: 0, y: y + 4, fill: "#9fb4b8", "font-size": 10, "font-family": "ui-monospace, Consolas, monospace" });
-    label.textContent = depth;
-    grid.appendChild(label);
-  }
+        // Lithology column (x from 52 to 100)
+        var layers = [
+          ["pat-shale", 24, 70],
+          ["pat-sandstone", 94, 54],
+          ["pat-shale", 148, 40],
+          ["pat-limestone", 188, 36],
+          ["pat-sandstone", 224, 78],
+          ["pat-shale", 302, 52],
+          ["pat-sandstone", 354, 60],
+          ["pat-limestone", 414, 44],
+          ["pat-shale", 458, 90],
+        ];
+        var column = document.getElementById("log-lithology");
+        layers.forEach(function (layer) {
+          column.appendChild(
+            make("rect", {
+              x: 52,
+              y: layer[1],
+              width: 48,
+              height: layer[2],
+              fill: "url(#" + layer[0] + ")",
+            }),
+          );
+        });
 
-  // Lithology column (x from 52 to 100)
-  var layers = [
-    ["pat-shale", 24, 70], ["pat-sandstone", 94, 54], ["pat-shale", 148, 40],
-    ["pat-limestone", 188, 36], ["pat-sandstone", 224, 78], ["pat-shale", 302, 52],
-    ["pat-sandstone", 354, 60], ["pat-limestone", 414, 44], ["pat-shale", 458, 90]
-  ];
-  var column = document.getElementById("log-lithology");
-  layers.forEach(function (layer) {
-    column.appendChild(make("rect", { x: 52, y: layer[1], width: 48, height: layer[2], fill: "url(#" + layer[0] + ")" }));
-  });
+        // Curves: sums of sines, with sharp jumps where the lithology changes
+        function buildPath(baseX, amplitude, seed) {
+          var points = [];
+          for (var y = top; y <= bottom; y += step) {
+            var t = y / 38;
+            var wave =
+              Math.sin(t * 1.7 + seed) * 0.5 +
+              Math.sin(t * 4.1 + seed * 2.3) * 0.3 +
+              Math.sin(t * 9.7 + seed * 0.7) * 0.2;
+            var offset = 0;
+            layers.forEach(function (layer, index) {
+              if (y >= layer[1]) {
+                offset = (index % 2 === 0 ? -1 : 1) * 14;
+              }
+            });
+            points.push(
+              (baseX + offset + wave * amplitude).toFixed(1) + " " + y,
+            );
+          }
+          return "M" + points.join(" L");
+        }
 
-  // Curves: sums of sines, with sharp jumps where the lithology changes
-  function buildPath(baseX, amplitude, seed) {
-    var points = [];
-    for (var y = top; y <= bottom; y += step) {
-      var t = y / 38;
-      var wave = Math.sin(t * 1.7 + seed) * 0.5 + Math.sin(t * 4.1 + seed * 2.3) * 0.3 + Math.sin(t * 9.7 + seed * 0.7) * 0.2;
-      var offset = 0;
-      layers.forEach(function (layer, index) {
-        if (y >= layer[1]) { offset = (index % 2 === 0 ? -1 : 1) * 14; }
-      });
-      points.push((baseX + offset + wave * amplitude).toFixed(1) + " " + y);
-    }
-    return "M" + points.join(" L");
-  }
+        var gr = document.getElementById("curve-gr");
+        var res = document.getElementById("curve-res");
+        gr.setAttribute("d", buildPath(185, 36, 1.2));
+        res.setAttribute("d", buildPath(275, 30, 4.1));
+        gr.setAttribute("pathLength", "1");
+        res.setAttribute("pathLength", "1");
+      })();
+    </script>
+    <script>
+      // Build the mailto link from parts so the address is not exposed as plain text.
+      (function () {
+        var link = document.getElementById("email-link");
+        if (link) {
+          var user = "carlosjguerrab";
+          var domain = "gmail.com";
+          link.href = "mailto:" + user + "@" + domain;
+        }
 
-  var gr = document.getElementById("curve-gr");
-  var res = document.getElementById("curve-res");
-  gr.setAttribute("d", buildPath(185, 36, 1.2));
-  res.setAttribute("d", buildPath(275, 30, 4.1));
-  gr.setAttribute("pathLength", "1");
-  res.setAttribute("pathLength", "1");
-})();
-  </script>
-  <script>
-// Build the mailto link from parts so the address is not exposed as plain text.
-(function () {
-  var link = document.getElementById("email-link");
-  if (link) {
-    var user = "carlosjguerrab";
-    var domain = "gmail.com";
-    link.href = "mailto:" + user + "@" + domain;
-  }
-
-  var year = document.getElementById("current-year");
-  if (year) {
-    year.textContent = new Date().getFullYear();
-  }
-})();
-  </script>
-</body>
+        var year = document.getElementById("current-year");
+        if (year) {
+          year.textContent = new Date().getFullYear();
+        }
+      })();
+    </script>
+  </body>
 </html>
