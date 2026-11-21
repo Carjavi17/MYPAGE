@@ -365,3 +365,34 @@ footer a:hover { color: var(--on-deep); }
   html { scroll-behavior: auto; }
   .draw { animation: none; stroke-dashoffset: 0; }
 }
+
+/* Layered column figure (featured geology project) */
+.layers-fig { width: 100%; max-width: 320px; }
+.layers-fig svg { width: 100%; height: auto; display: block; }
+.fig-level { font-family: var(--font-display); font-weight: 700; font-size: 14px; fill: var(--ink); }
+.fig-layers { font-size: 12px; fill: var(--ink-soft); }
+.facts.compact { width: 100%; max-width: 420px; }
+.facts.compact div { display: flex; justify-content: space-between; gap: 1rem; padding: 0.55rem 0; }
+.facts.compact dt { font-size: 0.95rem; }
+.facts.compact dd { text-align: right; }
+
+/* Real screenshots */
+.shots { display: flex; gap: 0.75rem; width: 100%; max-width: 520px; align-items: flex-start; }
+.shot { flex: 1; min-width: 0; margin: 0; }
+.shot img { width: 100%; height: auto; display: block; border-radius: 16px; border: 1px solid var(--line); background: #fff; box-shadow: 0 20px 40px -24px rgba(12, 27, 36, 0.55); }
+.shots .shot:nth-child(2) { margin-top: 2rem; }
+.browser img { display: block; width: 100%; height: auto; }
+
+/* 3D model image */
+.model-3d { width: 100%; max-width: 460px; }
+.model-3d img { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.project-visual .layers-fig { max-width: 300px; }
+
+@media (min-width: 720px) {
+  .about-text p,
+  .project-body p,
+  .stratum p.note {
+    text-align: justify;
+    hyphens: auto;
+  }
+}

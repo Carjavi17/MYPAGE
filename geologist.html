@@ -25,6 +25,7 @@
         <a class="brand" href="index.html">Carlos Guerra</a>
         <div class="header-right">
           <div class="page-links">
+            <a class="nav-link" href="#proyecto">Proyecto</a>
             <a class="nav-link" href="#experiencia">Experiencia</a>
             <a class="nav-link" href="#habilidades">Habilidades</a>
             <a class="nav-link" href="#contacto">Contacto</a>
@@ -49,8 +50,8 @@
           <div>
             <h1 class="role">Ingeniero Geólogo</h1>
             <p class="lead">
-              Más de 8 años en geología de desarrollo, modelado de yacimientos y
-              cálculo de reservas en el oriente de Venezuela.
+              Más de ocho años en geología de desarrollo, modelado de
+              yacimientos y cálculo de reservas en el oriente de Venezuela.
             </p>
             <p class="place">El Tigre, Anzoátegui, Venezuela</p>
             <div class="actions">
@@ -170,8 +171,8 @@
             <div class="about-text">
               <h2 id="about-title">Sobre mí</h2>
               <p class="big">
-                Leer el subsuelo con los datos que hay, y dejar claro cuánta
-                incertidumbre queda.
+                Analisis e interpretación de datos extraidos del subsuelo, con
+                el fin de disminuir la incertidumbre.
               </p>
               <p>
                 Me gradué como Ingeniero Geólogo en la Universidad de Oriente y
@@ -182,8 +183,10 @@
               <p>
                 Mi trabajo ha sido integrar pozos, mapas, registros y datos
                 sísmicos en modelos geológicos que respalden decisiones de
-                desarrollo, y apoyar la planificación y ejecución de pozos con
-                correlaciones, surveys y análisis de trayectoria.
+                desarrollo, como el modelo geoestadístico 3D del yacimiento
+                COEFG RG 14 del campo Santa Rosa, y apoyar la planificación y
+                ejecución de pozos con correlaciones, surveys y análisis de
+                trayectoria.
               </p>
             </div>
             <dl class="facts">
@@ -204,6 +207,1086 @@
                 <dd>Español nativo, inglés intermedio</dd>
               </div>
             </dl>
+          </div>
+        </section>
+
+        <section id="proyecto" aria-labelledby="featured-title">
+          <div class="wrap">
+            <h2 id="featured-title">Proyecto destacado</h2>
+
+            <article class="project">
+              <div class="project-body">
+                <span class="status">PDVSA, mayo de 2017</span>
+                <h3>
+                  Modelo geoestadístico 3D del yacimiento COEFG RG 14, campo
+                  Santa Rosa
+                </h3>
+                <p>
+                  Modelo geocelular del yacimiento más importante del campo
+                  Santa Rosa (Formación Oficina, Miembro Colorado, Área Mayor de
+                  Anaco), construido como insumo para la simulación dinámica del
+                  yacimiento.
+                </p>
+                <ul class="points">
+                  <li>
+                    Modelo estructural con 29 planos de falla, editados en GOCAD
+                    y Petrel, y mallado de 50 × 50 m con capas de 5 pies.
+                  </li>
+                  <li>
+                    Control de calidad de datos: de 373 pozos del área se usaron
+                    247, tras descartar los no correlacionables, sin datos o
+                    fuera de la unidad.
+                  </li>
+                  <li>
+                    Facies de canales y barras de un sistema deltaico con Object
+                    Modeling, con dimensiones tomadas de relaciones
+                    espesor-ancho publicadas.
+                  </li>
+                  <li>
+                    Porosidad, Vshale y NetGross con simulación gaussiana
+                    secuencial y variogramas por geocuerpo, verificados contra
+                    los datos de pozo.
+                  </li>
+                  <li>
+                    Permeabilidad, saturación de agua irreducible y tipos de
+                    roca a partir de las ecuaciones del modelo petrofísico.
+                  </li>
+                  <li>
+                    Cotejo del volumen de roca del modelo con el del libro
+                    oficial de reservas.
+                  </li>
+                </ul>
+                <ul class="chips" aria-label="Herramientas y métodos">
+                  <li>Petrel 2013</li>
+                  <li>GOCAD</li>
+                  <li>OpenWorks</li>
+                  <li>Object Modeling</li>
+                  <li>SGS</li>
+                  <li>Variogramas</li>
+                </ul>
+              </div>
+
+              <figure class="project-visual">
+                <div class="model-3d">
+                  <img
+                    src="images/santa-rosa-3d-model.jpg"
+                    alt="Vista 3D del modelo geocelular del yacimiento COEFG RG 14, con la malla y los planos de falla"
+                    width="899"
+                    height="560"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="layers-fig">
+                  <svg
+                    viewBox="0 0 300 419"
+                    role="img"
+                    aria-label="Los siete niveles modelados, con el número de capas de cada uno"
+                  >
+                    <defs>
+                      <pattern
+                        id="pat-fs-sand"
+                        width="6"
+                        height="6"
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <rect width="6" height="6" fill="#c9ad6a" />
+                        <circle
+                          cx="2"
+                          cy="2"
+                          r="0.8"
+                          fill="#12202a"
+                          fill-opacity="0.55"
+                        />
+                        <circle
+                          cx="5"
+                          cy="5"
+                          r="0.8"
+                          fill="#12202a"
+                          fill-opacity="0.55"
+                        />
+                      </pattern>
+                      <pattern
+                        id="pat-fs-shale"
+                        width="8"
+                        height="5"
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <rect width="8" height="5" fill="#5d6f79" />
+                        <line
+                          x1="0"
+                          y1="2.5"
+                          x2="8"
+                          y2="2.5"
+                          stroke="#ffffff"
+                          stroke-opacity="0.4"
+                          stroke-width="1"
+                        />
+                      </pattern>
+                      <pattern
+                        id="pat-fs-lime"
+                        width="12"
+                        height="9"
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <rect width="12" height="9" fill="#8fb8b1" />
+                        <path
+                          d="M0 0.5H12M0 4.5H12M6 0V4.5M0 4.5V9M12 4.5V9"
+                          stroke="#12202a"
+                          stroke-opacity="0.4"
+                          stroke-width="0.8"
+                          fill="none"
+                        />
+                      </pattern>
+                    </defs>
+                    <rect
+                      x="20"
+                      y="12.0"
+                      width="96"
+                      height="42.0"
+                      fill="url(#pat-fs-sand)"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="16.2"
+                      y2="16.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="20.4"
+                      y2="20.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="24.6"
+                      y2="24.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="28.8"
+                      y2="28.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="33.0"
+                      y2="33.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="37.2"
+                      y2="37.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="41.4"
+                      y2="41.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="45.6"
+                      y2="45.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="49.8"
+                      y2="49.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <rect
+                      x="20"
+                      y="12.0"
+                      width="96"
+                      height="42.0"
+                      fill="none"
+                      stroke="#12202a"
+                      stroke-width="1.4"
+                    />
+                    <text x="130" y="37.0" class="fig-level">
+                      COE1
+                      <tspan class="fig-layers" dx="8">10 capas</tspan>
+                    </text>
+                    <rect
+                      x="20"
+                      y="54.0"
+                      width="96"
+                      height="67.2"
+                      fill="url(#pat-fs-shale)"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="58.2"
+                      y2="58.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="62.4"
+                      y2="62.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="66.6"
+                      y2="66.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="70.8"
+                      y2="70.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="75.0"
+                      y2="75.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="79.2"
+                      y2="79.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="83.4"
+                      y2="83.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="87.6"
+                      y2="87.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="91.8"
+                      y2="91.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="96.0"
+                      y2="96.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="100.2"
+                      y2="100.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="104.4"
+                      y2="104.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="108.6"
+                      y2="108.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="112.8"
+                      y2="112.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="117.0"
+                      y2="117.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <rect
+                      x="20"
+                      y="54.0"
+                      width="96"
+                      height="67.2"
+                      fill="none"
+                      stroke="#12202a"
+                      stroke-width="1.4"
+                    />
+                    <text x="130" y="91.6" class="fig-level">
+                      COE2
+                      <tspan class="fig-layers" dx="8">16 capas</tspan>
+                    </text>
+                    <rect
+                      x="20"
+                      y="121.2"
+                      width="96"
+                      height="29.4"
+                      fill="url(#pat-fs-lime)"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="125.4"
+                      y2="125.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="129.6"
+                      y2="129.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="133.8"
+                      y2="133.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="138.0"
+                      y2="138.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="142.2"
+                      y2="142.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="146.4"
+                      y2="146.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <rect
+                      x="20"
+                      y="121.2"
+                      width="96"
+                      height="29.4"
+                      fill="none"
+                      stroke="#12202a"
+                      stroke-width="1.4"
+                    />
+                    <text x="130" y="139.9" class="fig-level">
+                      COE3
+                      <tspan class="fig-layers" dx="8">7 capas</tspan>
+                    </text>
+                    <rect
+                      x="20"
+                      y="150.6"
+                      width="96"
+                      height="29.4"
+                      fill="url(#pat-fs-sand)"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="154.8"
+                      y2="154.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="159.0"
+                      y2="159.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="163.2"
+                      y2="163.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="167.4"
+                      y2="167.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="171.6"
+                      y2="171.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="175.8"
+                      y2="175.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <rect
+                      x="20"
+                      y="150.6"
+                      width="96"
+                      height="29.4"
+                      fill="none"
+                      stroke="#12202a"
+                      stroke-width="1.4"
+                    />
+                    <text x="130" y="169.3" class="fig-level">
+                      COF1
+                      <tspan class="fig-layers" dx="8">7 capas</tspan>
+                    </text>
+                    <rect
+                      x="20"
+                      y="180.0"
+                      width="96"
+                      height="58.8"
+                      fill="url(#pat-fs-shale)"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="184.2"
+                      y2="184.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="188.4"
+                      y2="188.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="192.6"
+                      y2="192.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="196.8"
+                      y2="196.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="201.0"
+                      y2="201.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="205.2"
+                      y2="205.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="209.4"
+                      y2="209.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="213.6"
+                      y2="213.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="217.8"
+                      y2="217.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="222.0"
+                      y2="222.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="226.2"
+                      y2="226.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="230.4"
+                      y2="230.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="234.6"
+                      y2="234.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <rect
+                      x="20"
+                      y="180.0"
+                      width="96"
+                      height="58.8"
+                      fill="none"
+                      stroke="#12202a"
+                      stroke-width="1.4"
+                    />
+                    <text x="130" y="213.4" class="fig-level">
+                      COF2
+                      <tspan class="fig-layers" dx="8">14 capas</tspan>
+                    </text>
+                    <rect
+                      x="20"
+                      y="238.8"
+                      width="96"
+                      height="88.2"
+                      fill="url(#pat-fs-lime)"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="243.0"
+                      y2="243.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="247.2"
+                      y2="247.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="251.4"
+                      y2="251.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="255.6"
+                      y2="255.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="259.8"
+                      y2="259.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="264.0"
+                      y2="264.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="268.2"
+                      y2="268.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="272.4"
+                      y2="272.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="276.6"
+                      y2="276.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="280.8"
+                      y2="280.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="285.0"
+                      y2="285.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="289.2"
+                      y2="289.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="293.4"
+                      y2="293.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="297.6"
+                      y2="297.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="301.8"
+                      y2="301.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="306.0"
+                      y2="306.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="310.2"
+                      y2="310.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="314.4"
+                      y2="314.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="318.6"
+                      y2="318.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="322.8"
+                      y2="322.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <rect
+                      x="20"
+                      y="238.8"
+                      width="96"
+                      height="88.2"
+                      fill="none"
+                      stroke="#12202a"
+                      stroke-width="1.4"
+                    />
+                    <text x="130" y="286.9" class="fig-level">
+                      COF3
+                      <tspan class="fig-layers" dx="8">21 capas</tspan>
+                    </text>
+                    <rect
+                      x="20"
+                      y="327.0"
+                      width="96"
+                      height="79.8"
+                      fill="url(#pat-fs-sand)"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="331.2"
+                      y2="331.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="335.4"
+                      y2="335.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="339.6"
+                      y2="339.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="343.8"
+                      y2="343.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="348.0"
+                      y2="348.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="352.2"
+                      y2="352.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="356.4"
+                      y2="356.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="360.6"
+                      y2="360.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="364.8"
+                      y2="364.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="369.0"
+                      y2="369.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="373.2"
+                      y2="373.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="377.4"
+                      y2="377.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="381.6"
+                      y2="381.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="385.8"
+                      y2="385.8"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="390.0"
+                      y2="390.0"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="394.2"
+                      y2="394.2"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="398.4"
+                      y2="398.4"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <line
+                      x1="20"
+                      x2="116"
+                      y1="402.6"
+                      y2="402.6"
+                      stroke="#12202a"
+                      stroke-opacity="0.28"
+                      stroke-width="0.6"
+                    />
+                    <rect
+                      x="20"
+                      y="327.0"
+                      width="96"
+                      height="79.8"
+                      fill="none"
+                      stroke="#12202a"
+                      stroke-width="1.4"
+                    />
+                    <text x="130" y="370.9" class="fig-level">
+                      COG
+                      <tspan class="fig-layers" dx="8">19 capas</tspan>
+                    </text>
+                  </svg>
+                </div>
+                <dl class="facts compact">
+                  <div>
+                    <dt>Pozos usados</dt>
+                    <dd>247 de 373</dd>
+                  </div>
+                  <div>
+                    <dt>Planos de falla</dt>
+                    <dd>29</dd>
+                  </div>
+                  <div>
+                    <dt>Niveles modelados</dt>
+                    <dd>7, de COE1 a COG</dd>
+                  </div>
+                  <div>
+                    <dt>Tamaño de la malla</dt>
+                    <dd>Unos 13 millones de celdas</dd>
+                  </div>
+                </dl>
+                <figcaption>
+                  Vista 3D del modelo y dibujo esquemático de sus niveles, con
+                  capas de 5 pies
+                </figcaption>
+              </figure>
+            </article>
           </div>
         </section>
 
@@ -247,6 +1330,11 @@
                   <p class="org">PDVSA, Puerto La Cruz</p>
                   <ul>
                     <li>
+                      Elaboración del modelo geoestadístico 3D del yacimiento
+                      COEFG RG 14 (campo Santa Rosa) para simulación dinámica,
+                      con Petrel y GOCAD.
+                    </li>
+                    <li>
                       Análisis geológico y cálculo de reservas, incluyendo el
                       área Mayor de Anaco.
                     </li>
@@ -255,16 +1343,8 @@
                       secciones estructurales y estratigráficas.
                     </li>
                     <li>
-                      Integración de mapas, registros y datos sísmicos para
-                      modelos geológicos y caracterización de yacimientos.
-                    </li>
-                    <li>
                       Estudios de geología de desarrollo y evaluación de
                       yacimientos, incluyendo campos maduros.
-                    </li>
-                    <li>
-                      Informes técnicos para respaldar la planificación y
-                      ejecución de proyectos de exploración y desarrollo.
                     </li>
                   </ul>
                 </div>
@@ -361,9 +1441,8 @@
     <footer>
       <div class="wrap">
         <span
-          >© <span id="current-year"></span> Carlos Guerra - Todo los derechos
-          reservados.</span
-        >
+          >© <span id="current-year"></span> Carlos Guerra-Derechos Reservados
+        </span>
         <a href="index.html">Inicio</a>
       </div>
     </footer>

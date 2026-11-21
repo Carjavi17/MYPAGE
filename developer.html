@@ -51,7 +51,7 @@
             <h1 class="role">Desarrollador de Software</h1>
             <p class="lead">
               Construyo aplicaciones completas: backend, base de datos y app
-              móvil (Frotend) o web, con pruebas automáticas.
+              móvil o web, con pruebas automáticas.
             </p>
             <p class="place">El Tigre, Anzoátegui, Venezuela</p>
             <div class="actions">
@@ -158,7 +158,9 @@
                 Construyo backend y APIs con Node.js, TypeScript y .NET, bases
                 de datos relacionales y aplicaciones móviles con React Native.
                 Escribo pruebas automáticas y llevo cada proyecto desde el
-                diseño hasta su despliegue.
+                diseño hasta su despliegue: hoy tengo tres aplicaciones en
+                desarrollo, una de ellas para la Asociación de Transportistas
+                MOHAI.
               </p>
             </div>
             <dl class="facts">
@@ -189,10 +191,11 @@
             <article class="project">
               <div class="project-body">
                 <span class="status">En desarrollo</span>
-                <h3>RutasT, transporte público en El Tigre</h3>
+                <h3>MOHAI, app de transporte en El Tigre</h3>
                 <p>
                   Aplicación móvil para pedir una unidad en una ciudad donde no
-                  hay paradas fijas. El pasajero indica dónde está y cuántos
+                  hay paradas fijas, desarrollada para la Asociación de
+                  Transportistas MOHAI. El pasajero indica dónde está y cuántos
                   son, y ve en el mapa cómo se acerca su unidad.
                 </p>
                 <ul class="points">
@@ -201,19 +204,22 @@
                     administrador.
                   </li>
                   <li>
-                    Ubicación del conductor en tiempo real y avisos con sonido.
+                    Pasajeros civiles y estudiantes en un mismo pedido, con pago
+                    en efectivo o pago móvil.
                   </li>
                   <li>
-                    Pago en efectivo o pago móvil con referencia, y tarifa de
-                    estudiante.
+                    Control de viajes: el controlador asigna cada solicitud
+                    según los puestos libres de cada conductor, o el
+                    administrador activa el modo sin controlador y el primer
+                    conductor que toma el viaje se queda con él.
                   </li>
                   <li>
-                    Modo sin controlador: el primer conductor que toca la
-                    solicitud se queda el viaje.
+                    Precio del pasaje en dólares o bolívares; los viajes ya
+                    pedidos conservan su monto.
                   </li>
                   <li>
-                    Pruebas automáticas unitarias y de integración, y backend en
-                    la nube.
+                    Ubicación en tiempo real, avisos con sonido, pruebas
+                    automáticas y backend en la nube.
                   </li>
                 </ul>
                 <ul class="chips" aria-label="Tecnologías">
@@ -226,51 +232,43 @@
                   <li>Prisma</li>
                   <li>Socket.IO</li>
                   <li>Jest</li>
+                  <li>Render</li>
                 </ul>
               </div>
 
               <figure class="project-visual">
-                <div class="phone" aria-hidden="true">
-                  <div class="phone-screen">
-                    <div class="phone-map">
-                      <svg viewBox="0 0 230 440" preserveAspectRatio="none">
-                        <path
-                          d="M-10 330 C 50 300, 70 240, 120 220 S 190 150, 250 90"
-                          fill="none"
-                          stroke="#2fb5a3"
-                          stroke-width="3"
-                          stroke-dasharray="2 7"
-                          stroke-linecap="round"
-                        />
-                        <circle cx="76" cy="252" r="9" fill="#f58220" />
-                        <circle
-                          cx="76"
-                          cy="252"
-                          r="16"
-                          fill="#f58220"
-                          fill-opacity="0.25"
-                        />
-                        <circle cx="165" cy="168" r="8" fill="#4d9bff" />
-                        <circle
-                          cx="165"
-                          cy="168"
-                          r="15"
-                          fill="#4d9bff"
-                          fill-opacity="0.25"
-                        />
-                      </svg>
-                    </div>
-                    <div class="phone-top"><b>R</b> RutasT</div>
-                    <div class="phone-card">
-                      <strong>Tu unidad está en camino</strong>
-                      <span>2 pasajeros, 1 estudiante</span>
-                      <div class="phone-pay">
-                        <i class="on">Pago móvil</i><i>Efectivo</i>
-                      </div>
-                    </div>
+                <div class="shots">
+                  <div class="shot">
+                    <img
+                      src="images/mohai-request.jpg"
+                      alt="Pantalla del pasajero para pedir una unidad, con ubicación, cantidad de civiles y estudiantes y forma de pago"
+                      width="420"
+                      height="882"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="shot">
+                    <img
+                      src="images/mohai-dispatch.jpg"
+                      alt="Pantalla de control de viajes con solicitudes nuevas y conductores conectados con sus puestos libres"
+                      width="420"
+                      height="882"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="shot">
+                    <img
+                      src="images/mohai-settings.jpg"
+                      alt="Pantalla de ajustes del administrador con modo con o sin controlador y precio del pasaje"
+                      width="420"
+                      height="882"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
-                <figcaption>Vista ilustrativa de la app</figcaption>
+                <figcaption>
+                  Capturas de la app: pasajero, control de viajes y ajustes
+                </figcaption>
               </figure>
             </article>
 
@@ -316,42 +314,100 @@
               </div>
 
               <figure class="project-visual">
-                <div class="browser" aria-hidden="true">
+                <div class="browser">
                   <div class="browser-bar">
-                    <i></i><i></i><i></i><span>servicios</span>
+                    <i></i><i></i><i></i><span>ServicesWebsite</span>
                   </div>
-                  <div class="browser-body">
-                    <div class="search-row">
-                      <div>Profesión o servicio</div>
-                      <b>Buscar</b>
-                    </div>
-                    <div class="result">
-                      <span class="avatar">E</span>
-                      <div>
-                        <strong>Electricista</strong
-                        ><small>Respuesta rápida</small>
-                      </div>
-                      <span class="stars">★★★★★</span>
-                    </div>
-                    <div class="result">
-                      <span class="avatar">D</span>
-                      <div>
-                        <strong>Diseñadora gráfica</strong
-                        ><small>Trabajos entregados</small>
-                      </div>
-                      <span class="stars">★★★★★</span>
-                    </div>
-                    <div class="result">
-                      <span class="avatar">A</span>
-                      <div>
-                        <strong>Abogado</strong
-                        ><small>Consultas y trámites</small>
-                      </div>
-                      <span class="stars">★★★★☆</span>
-                    </div>
+                  <img
+                    src="images/serviceswebsite-home.jpg"
+                    alt="Portada de ServicesWebsite con buscador de profesionales, profesiones y cómo funciona"
+                    width="1100"
+                    height="770"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>Portada de la web</figcaption>
+              </figure>
+            </article>
+
+            <article class="project">
+              <div class="project-body">
+                <span class="status">En desarrollo</span>
+                <h3>Barber Studio JM90, reservas para una barbería</h3>
+                <p>
+                  App móvil para que los clientes de una barbería reserven
+                  turnos y para que los barberos y el administrador gestionen la
+                  agenda, los servicios con precio y los horarios de descanso.
+                </p>
+                <ul class="points">
+                  <li>
+                    Tres perfiles: cliente, barbero y administrador, con
+                    permisos validados en el servidor.
+                  </li>
+                  <li>
+                    Horarios libres calculados según la duración del servicio, y
+                    una restricción en la base de datos que impide dos turnos
+                    superpuestos del mismo barbero.
+                  </li>
+                  <li>
+                    Bloqueo de días u horas de un barbero o de toda la barbería,
+                    y reseñas de 1 a 5 estrellas con moderación.
+                  </li>
+                  <li>
+                    Contraseñas con bcrypt, sesión con JWT guardada en
+                    almacenamiento seguro.
+                  </li>
+                  <li>
+                    28 rutas de API, 5 tablas y 44 pruebas unitarias; servidor y
+                    base de datos listos para desplegar en Render.
+                  </li>
+                </ul>
+                <ul class="chips" aria-label="Tecnologías">
+                  <li>React Native</li>
+                  <li>Expo</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>Prisma</li>
+                  <li>PostgreSQL</li>
+                  <li>JWT</li>
+                  <li>Render</li>
+                  <li>EAS Build</li>
+                </ul>
+              </div>
+
+              <figure class="project-visual">
+                <div class="shots">
+                  <div class="shot">
+                    <img
+                      src="images/barber-login.jpg"
+                      alt="Pantalla de inicio de sesión de Barber Studio JM90 con el logo de la barbería"
+                      width="420"
+                      height="882"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="shot">
+                    <img
+                      src="images/barber-booking.jpg"
+                      alt="Pantalla de reserva con servicios, precios, barbero y selector de día"
+                      width="420"
+                      height="882"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="shot">
+                    <img
+                      src="images/barber-blocking.jpg"
+                      alt="Pantalla del administrador para bloquear horarios de un barbero o de toda la barbería"
+                      width="420"
+                      height="882"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
-                <figcaption>Vista ilustrativa de la web</figcaption>
+                <figcaption>
+                  Capturas de la app: acceso, reserva y bloqueo de horarios
+                </figcaption>
               </figure>
             </article>
           </div>
@@ -472,7 +528,10 @@
 
     <footer>
       <div class="wrap">
-        <span>© <span id="current-year"></span> Carlos Guerra - Todo los derechos reservados.</span>
+        <span
+          >© <span id="current-year"></span> Carlos Guerra-Derechos
+          Reservados </span
+        >
         <a href="index.html">Inicio</a>
       </div>
     </footer>
